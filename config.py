@@ -1,3 +1,12 @@
+import os
+import streamlit as st
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# Streamlit lit d'abord dans les Secrets, puis dans le .env local si disponible
+API_KEY = st.secrets.get("API_KEY") or os.getenv("API_KEY")
+TAVILY_API_KEY = st.secrets.get("TAVILY_API_KEY") or os.getenv("TAVILY_API_KEY")
 from dotenv import load_dotenv
 import os
 
