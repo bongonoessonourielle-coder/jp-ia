@@ -1,13 +1,10 @@
 import json
 import os
 from openai import OpenAI
-from config import API_KEY, MODEL, SYSTEM_PROMPT
-from recherche import rechercher
-from memoire import charger_memoire, sauvegarder_cle
-from outils import executer_code, lire_fichier
+import config
 
 client = OpenAI(
-    api_key=API_KEY,
+    api_key=config.API_KEY,
     base_url="https://api.groq.com/openai/v1"
 )
 
