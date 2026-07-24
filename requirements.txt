@@ -4,3 +4,5 @@ groq
 python-dotenv
 duckduckgo-search
 tavily-python
+pypdf
+pypdf2
